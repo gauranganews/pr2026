@@ -1,0 +1,46 @@
+### Health Check
+GET http://localhost:3000/api/health
+
+###
+
+### Get Forecast - Example 1 (Moscow)
+POST http://localhost:3000/api/forecast
+Content-Type: application/json
+
+{
+  "birthDate": "1990-05-15",
+  "birthTime": "14:30",
+  "birthPlace": "Москва"
+}
+
+###
+
+### Get Forecast - Example 2 (New York with coordinates)
+POST http://localhost:3000/api/forecast
+Content-Type: application/json
+
+{
+  "birthDate": "1985-12-25",
+  "birthTime": "08:00",
+  "birthPlace": "New York",
+  "latitude": 40.7128,
+  "longitude": -74.0060,
+  "timezone": -5
+}
+
+###
+
+### Get Forecast - Example 3 (London)
+POST http://localhost:3000/api/forecast
+Content-Type: application/json
+
+{
+  "birthDate": "1992-03-10",
+  "birthTime": "18:45",
+  "birthPlace": "London"
+}
+
+###
+
+### Root endpoint
+GET http://localhost:3000/
