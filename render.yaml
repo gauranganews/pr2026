@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: astro-forecast-2026
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: ASTROLOGY_USER_ID
+        sync: false
+      - key: ASTROLOGY_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false

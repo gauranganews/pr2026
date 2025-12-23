@@ -15,7 +15,7 @@ export const config = {
     apiKey: process.env.GOOGLE_MAPS_API_KEY || '',
   },
   server: {
-    port: parseInt(process.env.PORT || '3000', 10),
+    port: parseInt(process.env.PORT || '7860', 10), // 7860 for Hugging Face, 3000 for local
     nodeEnv: process.env.NODE_ENV || 'development',
   },
 };

@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+.env
+.env.local
+dist
+README.md
+USAGE.md
+DEPLOYMENT.md
+examples
+.vscode
+.idea
+*.md
+!README_HF.md

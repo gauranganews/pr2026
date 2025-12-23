@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  astro-forecast:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - ASTROLOGY_USER_ID=${ASTROLOGY_USER_ID}
+      - ASTROLOGY_API_KEY=${ASTROLOGY_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    restart: unless-stopped
